@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mainheading">Hello world</h1>
+    <h2 id="Sideheading">This is sasi</h2>
+    <p class="paragraph">Now i am practicing java script</p>
+    <p class="paragraph">I am working on dom operations</p>
+    <p class="paragraph">Learn consistently...</p>
+    
+    <button onclick="document.getElementById('message').textContent='Welcome!'" style="align-items: center; width:150px; height: auto;">Join with Me</button>
+    <p id="message"></p>
+    <script>
+        let heading=document.getElementById("mainheading")
+        heading.innerHTML="Hi everyone"//change content inside main heading in html by acessing the element using its id
+        heading.style.color = "blue";//giving a text colour for main heading
+        heading.style.background="pink"//giving a background colour for main heading
+        heading.style.fontSize = "30px";//giving a fontsize for main heading
+        document.getElementsByClassName("paragraph")[0].innerHTML="So,now i am going to start my first java script practice program"//by using class nME
+        //[0]-> will represent first paragraph in the class
+        let paragraphs = document.getElementsByTagName("p");//acessing elements by tag name and storing
+        let SecondParagraph = paragraphs[1];//storing second paragraph from the class paragraphs
+        SecondParagraph.innerHTML = "let's work with dom operations";//changing content in the second paragraph
+        document.getElementsByClassName("paragraph")[0].remove()//removing the first paragraph
+        document.body.style.background="aqua"
+    </script>
+</body>
+</html>
